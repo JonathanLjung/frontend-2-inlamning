@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Shoes 👟</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <h1 id="sell-shoes">SÄLJ DINA SKOR </h1>
+    <nav class="sidenav">
+        <a href="home.html">Hem</a>
+        <a href="all-shoes.html">Alla Skor</a>
+        <a href="sell-shoes.html">Sälj Skor</a>
+        <a href="">Om Oss</a>
+      </nav>   
+      <div class="sell-container">
+        <label for="name">Produktnamn: </label>
+        <input id="name" type="text">
+        <label for="date">Datum: </label>
+        <input id="date" type="date">
+        <label for="description">Beskrivning: </label>
+        <textarea name="description" cols="30" rows="5"></textarea>
+        <div class="upload-img">
+        <label for="img">Bilder: </label>
+        <input type="file">
+        <input type="file">
+        <input type="file">
+        <input type="file">
+        </div>
+        <label for="category">Kategori: </label>
+        <select name="" id="category">
+            <option value="Sneaker">Sneaker</option>
+            <option value="Toffla">Toffla</option>
+            <option value="Sandaler">Sandaler</option>
+            <option value="Kängor">Kängor</option>
+            <option value="Accessoarer">Accessoarer</option>
+        </select>
+        <button id="submit-btn">Skicka Säljförfrågan</button>
+
+
+      </div>
+</body>
+</html>
