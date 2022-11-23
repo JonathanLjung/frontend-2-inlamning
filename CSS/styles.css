@@ -577,9 +577,9 @@ input[type=text],
 [type=email],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 5px;
@@ -708,8 +708,8 @@ textarea {
 }
 
 .dior-grid {
-  margin-top: 100px;
   display: grid;
+  margin-top: 100px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3px;
   grid-column-gap: 50px;

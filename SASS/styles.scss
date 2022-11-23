@@ -255,15 +255,6 @@ h1 {
     border-radius: 7px;
   }
 }
-// .item {
-//   width: 500px;
-//   border: 3px solid #d33641;
-//   justify-content: center;
-//   display: flex;
-//   align-items: center;
-//   height: auto;
-// }
-
 #more-info-1 {
   @include m.more-info-1();
 
@@ -411,9 +402,9 @@ input[type="text"],
 [type="email"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 5px;
@@ -540,15 +531,8 @@ textarea {
 }
 
 .dior-grid {
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
-  // grid-column-gap: 0px;
-  // grid-row-gap: 0px;
-  // width: 1000px;
-  // place-items: center;
-  margin-top: 100px;
   display: grid;
+  margin-top: 100px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3px;
   grid-column-gap: 50px;
