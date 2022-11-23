@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan 1 Retro High "Dior"</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  
+  <body>
+    <nav class="sidenav">
+      <a href="home.html">Hem</a>
+      <a href="all-shoes.html">Alla Skor</a>
+      <a href="sell-shoes.html">Sälj Skor</a>
+      <a href="about-us.html">Om Oss</a>
+    </nav>
+    <h1>JORDAN 1 RETRO "DIOR" HIGH</h1>
+    <div class="dior-description">
+      <h2>Jordan 1 Retro "Dior" High</h2>
+      <p>02/05-2022</p>
+      <p>Sneakers, Jordan</p>
+      <p><b>104 999:- </b></p>
+      <p>Denna Jordan 1 sko är en vit och grå lädersko, med den traditionella nike swooshen med dior detaljer, denna sko är gjord i Italien med premium material. Sulorna är en typ av genomskinlig blå färn med dior loggan. </p>
+      <button type="button" id="dior-more-info">Produktinformation👟</button> 
+      <button class="add-to-cart-btn">Add to cart</button>
+    </div>
+    <div id="dior-content">
+      <ul>
+        <p><b> Detaljer</b></p>
+        <li>Vit</li>
+        <li>Platt gummisula</li>
+        <li>Snörning i fram</li>
+        <li>Innersula med logotyp</li>
+        <li>Monogrammönster</li>
+        <li>Ankellängd</li>
+      </ul>
+    </div>
+    <div class="dior-flex">
+      <div class="dior-grid">
+        <div class="dior">
+          <img
+          src="../img/dior-1.png"
+          width="500px"
+          alt="img of dior sneaker"
+          />
+        </div>
+        <div class="dior-1">
+          <img
+          src="../img/dior-2.png"
+          width="500px"
+          alt="img of dior sneaker"
+          />
+        </div>
+        <div class="dior-2">
+          <img
+          src="../img/dior-3.png"
+          width="500px"
+          alt="img of dior sneaker"
+          />
+        </div>
+        <div class="dior-3">
+          <img
+          src="../img/dior-4.png"
+          width="500px"
+          alt="img of dior sneaker"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="add-to-cart-btn">
+      <button class="add-to-cart-btn">Add to cart</button>
+    </div> -->
+    <script>
+      $("#dior-more-info").click(function () {
+        const displayState = $("#dior-more-info").css("display");
+        console.log("DISPLAY", displayState);
+        $("#dior-content").toggle();
+      });
+      
+      $("#product-information").click(function () {
+        const displayState = $("#product-information").css("display");
+        console.log("DISPLAY", displayState);
+        $("#product-content").toggle();
+      });
+      </script>
+  </body>
+  </html>
+  

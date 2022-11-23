@@ -16,16 +16,20 @@
 }
 
 .link {
-  color: white;
-  text-decoration: none;
+  color: #30302e;
+  text-decoration: solid;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
-  border: solid 1px;
-  border-radius: 2px;
+  border: solid 2px #30302e;
+  border-radius: 7px;
   padding: 0.5rem;
   position: relative;
   left: 175px;
   bottom: 10px;
+  &:hover {
+    background-color: #30302e;
+    color: white;
+  }
 }
 
 .sidenav {
@@ -33,15 +37,22 @@
   top: 0;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 25px;
   height: 100%;
-  width: 250px;
+  width: 300px;
   padding-top: 25px;
   padding-left: 25px;
 
   & a {
-    text-decoration: none;
-    color: white;
+    font-size: 20px;
+    text-decoration: solid;
+    color: variables.$body-color;
     font-family: Arial, Helvetica, sans-serif;
+    &:hover {
+      color: rgb(158, 157, 157);
+    }
   }
 }
 
@@ -57,22 +68,104 @@ h1 {
   left: 0;
   right: 0;
   text-align: center;
-  color: white;
+  color: variables.$body-color;
   width: 500px;
 }
-
-#header-img {
-  top: 1px;
+#about-company {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
+  margin-left: 380px;
+  margin-top: 100px;
+  color: variables.$body-color;
+  width: 500px;
+  font-size: 20px;
+  & p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+#about-team {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 380px;
+  margin-top: 20px;
+  color: variables.$body-color;
+  width: 500px;
+  font-size: 20px;
+  & ul {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+#about-vd {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 380px;
+  margin-top: 20px;
+  color: variables.$body-color;
+  width: 500px;
+  font-size: 20px;
+  & p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+#vd {
+  display: flex;
+  position: absolute;
+  top: 310px;
+  left: 980px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-left: 20px;
+  gap: 5px;
+  justify-content: center;
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#team-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  & img {
+    width: 60%;
+  }
+}
+
+#header-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  & img {
+    border-radius: 7px;
+  }
 }
 
 .container {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  color: white;
+  color: variables.$body-color;
 }
 
 .sneakers-grid {
@@ -98,47 +191,78 @@ h1 {
   transition: transform 0.2s;
   &:hover {
     transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.063);
   }
 }
 
 .div-1 {
   grid-area: 1 / 1 / 2 / 2;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-2 {
   grid-area: 1 / 2 / 2 / 3;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-3 {
   grid-area: 1 / 3 / 2 / 4;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-4 {
   grid-area: 2 / 1 / 3 / 2;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-5 {
   grid-area: 2 / 2 / 3 / 3;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-6 {
   grid-area: 2 / 3 / 3 / 4;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-7 {
   grid-area: 3 / 1 / 4 / 2;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-8 {
   grid-area: 3 / 2 / 4 / 3;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-9 {
   grid-area: 3 / 3 / 4 / 4;
+  & img {
+    border-radius: 7px;
+  }
 }
 .div-10 {
   grid-area: 4 / 2 / 5 / 3;
+  & img {
+    border-radius: 7px;
+  }
 }
-.item {
-  width: 500px;
-  border: 3px solid white;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: auto;
-}
+// .item {
+//   width: 500px;
+//   border: 3px solid #d33641;
+//   justify-content: center;
+//   display: flex;
+//   align-items: center;
+//   height: auto;
+// }
 
 #more-info-1 {
   @include m.more-info-1();
@@ -253,9 +377,238 @@ h1 {
 }
 
 .sell-container {
+  color: #000;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  justify-content: space-between;
+}
+
+.contact-us {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #c2bcaf;
+  padding: 20px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  background-color: #c2bcaf;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #aa0404;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+  &:hover {
+    background-color: #510404;
+  }
+}
+
+.upload-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c2bcaf;
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.file {
+  width: min-content;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  color: #000;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#date {
+  color: #000;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#category {
+  color: #000;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit-btn {
+  background-color: #aa0404;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+  &:hover {
+    background-color: #510404;
+  }
+}
+
+#name {
+  background-color: #e6dfcf;
+}
+
+.sell-border {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 75px;
+  border-radius: 4px;
+  background-color: #c2bcaf;
+  & div {
+    background-color: #c2bcaf;
+  }
+}
+
+.contact-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  border: 2px solid;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.dior-flex {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.dior-grid {
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+  // grid-column-gap: 0px;
+  // grid-row-gap: 0px;
+  // width: 1000px;
+  // place-items: center;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3px;
+  grid-column-gap: 50px;
+}
+
+.dior,
+.dior-1,
+.dior-2,
+.dior-3,
+.dior-4 {
+  width: 500px;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.063);
+  }
+}
+
+.dior-description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: start;
+  gap: 20px;
+  width: fit-content;
+  margin-left: 1500px;
+  margin-top: 150px;
+  & p {
+    font-size: 20px;
+  }
+}
+
+.add-to-cart-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: start;
+  background-color: #aa0404;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+  &:hover {
+    background-color: #510404;
+  }
+}
+
+#dior-more-info {
+  @include m.dior-more-info();
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.166);
+  }
+}
+
+#dior-content {
+  @include m.dior-content();
+}

@@ -18,33 +18,42 @@
         <a href="home.html">Hem</a>
         <a href="all-shoes.html">Alla Skor</a>
         <a href="sell-shoes.html">Sälj Skor</a>
-        <a href="">Om Oss</a>
+        <a href="about-us.html">Om Oss</a>
       </nav>   
       <div class="sell-container">
-        <label for="name">Produktnamn: </label>
+        <div class="sell-border">
+        <div>
+        <label class="name" for="name">Produktnamn: </label>
         <input id="name" type="text">
-        <label for="date">Datum: </label>
-        <input id="date" type="date">
-        <label for="description">Beskrivning: </label>
-        <textarea name="description" cols="30" rows="5"></textarea>
-        <div class="upload-img">
-        <label for="img">Bilder: </label>
-        <input type="file">
-        <input type="file">
-        <input type="file">
-        <input type="file">
         </div>
+        <div>
+        <label class="date" for="date">Datum: </label>
+        <input id="date" type="date">
+        </div>
+        <div>
+        <label class="description" for="description">Beskrivning: </label>
+        <textarea name="description" cols="30" rows="5"></textarea>
+        </div>
+        <div class="upload-img">
+        <label for="files">Bilder, max 4st: </label>
+        <input class="file" type="file">
+        <input class="file" type="file">
+        <input class="file" type="file">
+        <input class="file" type="file">
+
+        </div>
+        <div>
         <label for="category">Kategori: </label>
         <select name="" id="category">
-            <option value="Sneaker">Sneaker</option>
-            <option value="Toffla">Toffla</option>
+            <option value="Sneaker">Sneakers</option>
+            <option value="Toffla">Tofflor</option>
             <option value="Sandaler">Sandaler</option>
             <option value="Kängor">Kängor</option>
             <option value="Accessoarer">Accessoarer</option>
         </select>
+        </div>
         <button id="submit-btn">Skicka Säljförfrågan</button>
-
-
+    </div>
       </div>
 </body>
 </html>

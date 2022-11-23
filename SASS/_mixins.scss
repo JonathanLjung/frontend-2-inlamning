@@ -2,7 +2,7 @@
 
 @mixin more-info-1 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -25,7 +25,7 @@
 }
 @mixin more-info-2 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -48,7 +48,7 @@
 }
 @mixin more-info-3 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -71,7 +71,7 @@
 }
 @mixin more-info-4 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -94,7 +94,7 @@
 }
 @mixin more-info-5 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -117,7 +117,7 @@
 }
 @mixin more-info-6 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -140,7 +140,7 @@
 }
 @mixin more-info-7 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -163,7 +163,7 @@
 }
 @mixin more-info-8 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -186,7 +186,7 @@
 }
 @mixin more-info-9 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -209,7 +209,7 @@
 }
 @mixin more-info-10 {
   background-color: variables.$body-background;
-  color: white;
+  color: rgb(55, 55, 55);
   cursor: pointer;
   padding: 0px;
   border: none;
@@ -231,3 +231,28 @@
   font-size: 14px;
 }
 
+@mixin dior-more-info {
+  background-color: variables.$body-background;
+  color: rgb(55, 55, 55);
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+@mixin dior-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: variables.$body-background;
+  max-width: 300px;
+  position: absolute;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
+  left: 1710px;
+  top: 650px;
+}
