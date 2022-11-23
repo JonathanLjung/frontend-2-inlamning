@@ -24,7 +24,7 @@
     <div id="about-company">
       <h2>Om oss</h2>
       <p>
-        Mozarts Sneakershop är ett aktiebolag som startaded år 1770 av ingen mindre än tonsättaren själv, <b> Wolfgang Amadeus Mozart</b>. Sedan dess har företaget flytit på med stor framgång. Idag är Mozarts Sneakershop den största webshoppen i världen.  
+        Mozarts Sneakershop är ett aktiebolag som startades år 1770 av ingen mindre än tonsättaren själv, <b> Wolfgang Amadeus Mozart</b>. Sedan dess har företaget flytit på med stor framgång. Idag är Mozarts Sneakershop den största webshoppen i världen.  
       </p>
     </div>
     <div id="about-team">
@@ -35,7 +35,7 @@
         <li>Johann Sebastian Bach</li>
         <li>Richard Strauss</li>
         <li>Antonia Vivaldi</li>
-        <li>Piotr llyitch Tjajkovskij</li>
+        <li>Albin Soulfunk</li>
         <li>Georges Bizet</li>
       </ul>
     </div>
@@ -72,8 +72,27 @@
         <label for="contact-msg">Meddelande: </label>
         <textarea placeholder="Ditt meddelande" name="contact-msg" id="contact-msg" cols="30" rows="5"></textarea>
 
-        <input class="submit-btn" type="submit" value="Skicka">
+        <input id="submit-button" class="submit-btn" type="submit" value="Skicka">
+        
     </div>
+    <span>Tack för ditt meddelande. Vi återkopplar så fort vi kan.</span>
     </div>
+    <script>
+      //  $("#submit-button").click(function () {
+      //   const displayState = $("#submit-button").css("display");
+      //   console.log("DISPLAY", displayState);
+      //   $(".contact-container").toggle();
+      //   text.text(
+      //         "Tack för ditt meddelande. Vi återkopplar så fort vi kan "
+      //       );
+      // });
+      $('span').hide();
+$('#submit-button').on('click',
+  function() {
+    $('span, .contact-container').toggle();
+    $(".contact-container").hide();
+  }
+);
+    </script>
   </body>
 </html>
